@@ -79,7 +79,7 @@
           (build-path path p)
           (λ ()
             (when (verbose?)
-              (log-warning (format "TR tests: waiting for ~a ~a" dir p)))
+              (eprintf "TR tests: waiting for ~a ~a~%" dir p))
             (force prm))))))
     (make-test-suite dir tests)))
 
